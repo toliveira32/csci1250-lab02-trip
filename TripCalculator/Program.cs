@@ -26,7 +26,6 @@ double fuelCost = gallonsNeeded * pricePerGallon;
 System.Console.WriteLine("Gallons needed: " + gallonsNeeded.ToString("F2"));
 System.Console.WriteLine("Fuel cost: " + fuelCost.ToString("C"));
 
-/*
 //Part 2: Asking the user Questions about a Pizza Party: asking for number of people attending party, how much pizza ate to give information about number of slices and total slicer per person and cost per price.
 System.Console.WriteLine("===Part 2: Pizza Party===");
 
@@ -50,4 +49,4 @@ double pizzaCost = numberOfPizzasBought * pricePerPizza;
 System.Console.WriteLine("Total Slices: " + totalSlices.ToString("F2"));
 System.Console.WriteLine("Slices per Person: " + slicesPerPerson.ToString("F2"));
 System.Console.WriteLine("Pizza Cost: " + pizzaCost.ToString("C"));
-*/
+
