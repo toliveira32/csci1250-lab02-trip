@@ -8,7 +8,7 @@
 
 //Part 1: Ask the user for his information about his trip. How many miles he did on his trip, the price per gallon of his veichile and how much he paid.
 
-System.Console.WriteLine("===Part 1: Road Trip===");
+System.Console.WriteLine("=== Part 1: Road Trip ===");
 
 Console.Write("How many miles is your Trip? ");
 int roundTripMiles = Convert.ToInt32(Console.ReadLine());
@@ -27,7 +27,7 @@ System.Console.WriteLine("Gallons needed: " + gallonsNeeded.ToString("F2"));
 System.Console.WriteLine("Fuel cost: " + fuelCost.ToString("C"));
 
 //Part 2: Asking the user Questions about a Pizza Party: asking for number of people attending party, how much pizza ate to give information about number of slices and total slicer per person and cost per price.
-System.Console.WriteLine("===Part 2: Pizza Party===");
+System.Console.WriteLine("=== Part 2: Pizza Party ===");
 
 const int numberOfSlicesPerPizza = 8;
 
@@ -50,3 +50,23 @@ System.Console.WriteLine("Total Slices: " + totalSlices.ToString("F2"));
 System.Console.WriteLine("Slices per Person: " + slicesPerPerson.ToString("F2"));
 System.Console.WriteLine("Pizza Cost: " + pizzaCost.ToString("C"));
 
+//Part 3: Paycheck Calculator: Having Taxes into account, calculate paycheck based on hours worked weekly
+System.Console.WriteLine("=== Part 3: Paycheck ===");
+
+const double TAX_RATE = 0.18;
+
+System.Console.Write("How many hours did you work this week? ");
+double hoursWorkedWeekly = Convert.ToDouble(Console.ReadLine());
+
+System.Console.Write("What is your hourly rate? ");
+double hourlyRate = Convert.ToDouble(Console.ReadLine());
+
+double grossPay = hoursWorkedWeekly * hourlyRate;
+
+double taxWithheld = grossPay * TAX_RATE;
+
+double takeHomePay = grossPay - taxWithheld;
+
+System.Console.WriteLine("Gross Pay: " + grossPay.ToString("C"));
+System.Console.WriteLine("Tax Withheld: " + taxWithheld.ToString("C"));
+System.Console.WriteLine("Take Home Pay: " + takeHomePay.ToString("C"));
